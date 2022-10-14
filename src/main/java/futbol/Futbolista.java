@@ -20,6 +20,10 @@ public abstract class Futbolista implements Comparable <Futbolista> {
 		return (this == f);
 	}
 	
+	public String toString() {
+		return "El futbolista " + nombre + " tiene " + edad + ", y juega de " + posicion;
+	}
+	
 	public abstract boolean jugarConLasManos();
 	
 	public String getNombre() {
@@ -37,6 +41,7 @@ public abstract class Futbolista implements Comparable <Futbolista> {
 	public String getPosicion() {
 		return posicion;
 	}
+
 	
 	
 }
