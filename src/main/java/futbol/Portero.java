@@ -8,16 +8,17 @@ public class Portero extends Futbolista {
 		this.golesRecibidos = golesRecibidos;
 		this.dorsal = dorsal;
 	}
-
-	public int compareTo(Portero o) {
-		int total= Math.abs(golesRecibidos-o.golesRecibidos);
-		return total;
-	}
 	
 	@Override
 	public boolean jugarConLasManos() {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
+	}
+
+	@Override
+	public int compareTo(Futbolista o) {
+		Portero persona = (Portero) o;
+		int total= Math.abs(golesRecibidos-persona.golesRecibidos);
+		return total;
 	}
 
 
