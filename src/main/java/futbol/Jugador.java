@@ -16,7 +16,7 @@ public class Jugador extends Futbolista {
 	}
 
 	@Override
-	public int compareTo(Futbolista o) {
+	public int compareTo(Object o) {
 		Jugador nuevo = (Jugador) o;
 		int diferencia = Math.abs(getEdad()-nuevo.getEdad());
 		return diferencia;
